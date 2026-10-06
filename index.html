@@ -49,8 +49,8 @@
   .bg-fx{ position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
   .bg-art{
     position:absolute; inset:0;
-    background:url('fond-mha.webp') center 18% / cover no-repeat;
-    filter:saturate(1.1) blur(1.5px);
+    background:url('fond-mha.webp') center top / auto 100% repeat-x;
+    filter:saturate(1.1) blur(.6px);
     opacity:.55;
     transform:scale(1.03);
   }
@@ -60,7 +60,7 @@
       linear-gradient(180deg, rgba(10,7,6,.55) 0%, rgba(10,7,6,.35) 40%, rgba(18,8,4,.8) 100%),
       radial-gradient(ellipse at center, rgba(10,7,6,.15) 0%, rgba(10,7,6,.7) 100%);
   }
-  @media (max-width:760px){ .bg-art{ background-position:center top; opacity:.45; } }
+  @media (max-width:760px){ .bg-art{ background:url('fond-mha.webp') center top / cover no-repeat; opacity:.45; } }
   .speedlines{
     position:absolute; inset:-20%;
     background:repeating-conic-gradient(from 0deg at 82% 8%,
